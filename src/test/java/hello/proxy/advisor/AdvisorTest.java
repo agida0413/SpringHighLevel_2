@@ -21,19 +21,29 @@ public class AdvisorTest {
 
     @Test
     void advisorTest1() {
+
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
-        DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(Pointcut.TRUE, new TimeAdvice());
-        proxyFactory.addAdvisor(advisor);
+        DefaultPointcutAdvisor defaultPointcutAdvisor = new DefaultPointcutAdvisor(Pointcut.TRUE, new TimeAdvice());
+        proxyFactory.addAdvisor(defaultPointcutAdvisor);
         ServiceInterface proxy = (ServiceInterface) proxyFactory.getProxy();
 
         proxy.save();
         proxy.find();
+//        ServiceInterface target = new ServiceImpl();
+//        ProxyFactory proxyFactory = new ProxyFactory(target);
+//        DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(Pointcut.TRUE, new TimeAdvice());
+//        proxyFactory.addAdvisor(advisor);
+//        ServiceInterface proxy = (ServiceInterface) proxyFactory.getProxy();
+//
+//        proxy.save();
+//        proxy.find();
     }
 
     @Test
     @DisplayName("직접 만든 포인트컷")
     void advisorTest2() {
+
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
         DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(new MyPointcut(), new TimeAdvice());
@@ -78,10 +88,15 @@ public class AdvisorTest {
 
         @Override
         public boolean matches(Method method, Class<?> targetClass) {
-            boolean result = method.getName().equals(matchName);
+            boolean equals = method.getName().equals(matchName);
             log.info("포인트컷 호출 method={} targetClass={}", method.getName(), targetClass);
-            log.info("포인트컷 결과 result={}", result);
-            return result;
+            log.info("포인트컷 결과 result={}", equals);
+            return equals;
+
+//            boolean result = method.getName().equals(matchName);
+//            log.info("포인트컷 호출 method={} targetClass={}", method.getName(), targetClass);
+//            log.info("포인트컷 결과 result={}", result);
+//            return result;
         }
 
         @Override

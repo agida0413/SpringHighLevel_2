@@ -19,6 +19,8 @@ public class ProxyFactoryTest {
     @Test
     @DisplayName("인터페이스가 있으면 JDK 동적 프록시 사용")
     void interfaceProxy() {
+
+
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
         proxyFactory.addAdvice(new TimeAdvice());

@@ -1,2 +1,3 @@
-_11:01:38.922 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest$Hello - callB
-]11:01:38.923 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest - result =B
+^15:39:38.354 [Test worker] INFO hello.proxy.advisor.MultiAdvisorTest$Advice2 - advice2 호출
+^15:39:38.355 [Test worker] INFO hello.proxy.advisor.MultiAdvisorTest$Advice1 - advice1 호출
+U15:39:38.355 [Test worker] INFO hello.proxy.common.service.ServiceImpl - save 호출

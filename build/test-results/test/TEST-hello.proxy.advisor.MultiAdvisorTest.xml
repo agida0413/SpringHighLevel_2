@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.proxy.advisor.MultiAdvisorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-12T06:39:38" hostname="kimyjui-MacBookPro.local" time="0.024">
+  <properties/>
+  <testcase name="하나의 프록시, 여러 어드바이저" classname="hello.proxy.advisor.MultiAdvisorTest" time="0.024"/>
+  <system-out><![CDATA[15:39:38.354 [Test worker] INFO hello.proxy.advisor.MultiAdvisorTest$Advice2 - advice2 호출
+15:39:38.355 [Test worker] INFO hello.proxy.advisor.MultiAdvisorTest$Advice1 - advice1 호출
+15:39:38.355 [Test worker] INFO hello.proxy.common.service.ServiceImpl - save 호출
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
