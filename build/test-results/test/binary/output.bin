@@ -1,1 +1,2 @@
-c21:30:21.775 [Test worker] INFO hello.proxy.pureproxy.decorator.DecoratorPatternTest - b=ABCdddccc
+_11:01:38.922 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest$Hello - callB
+]11:01:38.923 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest - result =B

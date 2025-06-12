@@ -5,7 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class TimeProxy extends ConcreteLogic {
 
-    private ConcreteLogic concreteLogic;
+
+
+        private ConcreteLogic concreteLogic;
 
     public TimeProxy(ConcreteLogic concreteLogic) {
         this.concreteLogic = concreteLogic;

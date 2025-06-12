@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.proxy.pureproxy.kim.dynamic.ReflectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-12T02:01:38" hostname="kimyjui-MacBookPro.local" time="0.005">
+  <properties/>
+  <testcase name="refletion2()" classname="hello.proxy.pureproxy.kim.dynamic.ReflectionTest" time="0.005"/>
+  <system-out><![CDATA[11:01:38.922 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest$Hello - callB
+11:01:38.923 [Test worker] INFO hello.proxy.pureproxy.kim.dynamic.ReflectionTest - result =B
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

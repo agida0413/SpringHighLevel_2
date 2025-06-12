@@ -8,7 +8,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class OrderRepositoryInterfaceProxy implements OrderRepositoryV1 {
 
-    private final OrderRepositoryV1 target;
+
+
+        private final OrderRepositoryV1 target;
     private final LogTrace logTrace;
 
     @Override
